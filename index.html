@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alien Drop: Galactic Defense</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="score">Score: <span id="score">0</span></div>
+  <div class="timer">Time Left: <span id="time">60</span> seconds</div>
+
+  <div id="game-over" style="display: none;">
+    <h2>Game Over!</h2>
+    <p>Your Score: <span id="final-score">0</span></p>
+    <button id="play-again">Play Again</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="game-start">
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzNiNm02Nm9vcTVpOHJhcGRmeGEyZzd1MXd4Y3FyN2R0bTZrN251NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/puIx4p7PHgt6EjkbuK/giphy.gif" alt="UFO" id="ufo-gif">
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <audio id="game-start-sound" src="./assets/universe-space-sounds-3595.mp3"></audio>
+  <audio id="alien-drop-sound" src="./assets/ufo_highpitch.mp3"></audio>
+  <audio id="background-music" src="./assets/nostalgic_music.mp3" loop></audio>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
